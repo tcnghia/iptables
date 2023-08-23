@@ -30,7 +30,7 @@ jobs:
 
     # Post to slack when things fail, if there is a SLACK_WEBHOOK secret.
     - if: ${{ failure() }}
-      uses: rtCamp/action-slack-notify@v2.2.0
+      uses: rtCamp/action-slack-notify@v2.2.1
       env:
         SLACK_ICON: http://github.com/chainguardian.png?size=48
         SLACK_USERNAME: chainguardian
